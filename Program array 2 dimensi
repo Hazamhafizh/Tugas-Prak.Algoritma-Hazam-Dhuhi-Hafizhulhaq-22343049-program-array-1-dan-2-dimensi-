@@ -1,12 +1,11 @@
 #include <iostream>
 
 using namespace std;
-
 int main(){
- int arrayDimensi1[5];
-
+ int arrayDimensi2[2][3];
+ 
  cout<<"======================="<<endl;
- cout<<"Program Array 1 Dimensi"<<endl;
+ cout<<"Program Array 2 Dimensi"<<endl;
  cout<<"=======================\n"<<endl;
  
  cout<<"========================="<<endl;
@@ -14,14 +13,20 @@ int main(){
  cout<<"NIM : 22343049"<<endl;
  cout<<"=========================\n\n"<<endl;
  
- for(int i=0;i<5;i++){
-  cout<<"Masukkan Nilai Siswa Urutan Ke-"<<i+7<<" : ";
-  cin>>arrayDimensi1[i];
+ for(int i=0;i<3;i++){
+  for(int j=0;j<2;j++){
+   cout<<"Masukkan Nilai Siswa Urutan Baris-"<<j+7<<" Kolom Ke-"<<i+7<<" : ";
+   cin>>arrayDimensi2[j][i]; 
+  }
  }
  
  cout<<endl;
  
- for(int x=0;x<5;x++){
-  cout<<"Nilai Siswa Urutan Ke-"<<x+1<<" : "                          <<arrayDimensi1[x]<<endl;
+ for(int i=0;i<3;i++){
+  for(int j=0;j<2;j++){
+   cout<<"Nilai Siswa Urutan Baris-"<<j+1<<" Kolom Ke-"<<i+1<<" Adalah : "<<arrayDimensi2[j][i];
+   cout<<endl;
+  }
  }
+
 }
