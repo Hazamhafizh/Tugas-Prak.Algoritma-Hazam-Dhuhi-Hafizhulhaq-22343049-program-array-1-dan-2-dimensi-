@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+ int arrayDimensi1[5];
+
+ cout<<"======================="<<endl;
+ cout<<"Program Array 1 Dimensi"<<endl;
+ cout<<"=======================\n"<<endl;
+ 
+ cout<<"========================="<<endl;
+ cout<<"Nama: Hazam Dhuhi Hafizhulhaq"<<endl;
+ cout<<"NIM : 22343049"<<endl;
+ cout<<"=========================\n\n"<<endl;
+ 
+ for(int i=0;i<5;i++){
+  cout<<"Masukkan Nilai Siswa Urutan Ke-"<<i+7<<" : ";
+  cin>>arrayDimensi1[i];
+ }
+ 
+ cout<<endl;
+ 
+ for(int x=0;x<5;x++){
+  cout<<"Nilai Siswa Urutan Ke-"<<x+1<<" : "                          <<arrayDimensi1[x]<<endl;
+ }
+}
